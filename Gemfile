@@ -38,6 +38,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'faker', '~> 1.7', '>= 1.7.3'
 end
 
 group :development do
@@ -54,8 +55,8 @@ group :development do
   # Console display improvements
   gem 'awesome_print', '~> 1.8'
   gem 'hirb', '~> 0.7.3'
-
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
