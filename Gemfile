@@ -49,14 +49,17 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'annotate' # Add a comment summarizing the current schema to the top or bottom of each of your model
-  gem 'better_errors', '~> 2.5', '>= 2.5.1' # Better rails error display
-
   # Console display improvements
   gem 'awesome_print', '~> 1.8'
   gem 'hirb', '~> 0.7.3'
+  
+  # Other
+  gem 'annotate' # Add a comment summarizing the current schema to the top or bottom of each of your model
+  gem 'better_errors', '~> 2.5', '>= 2.5.1' # Better rails error display
+  gem 'binding_of_caller', '~> 0.8.0' # Retrieve the binding of a method's caller.
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
