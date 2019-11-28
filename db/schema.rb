@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191126191753) do
+ActiveRecord::Schema.define(version: 20191128214040) do
 
   create_table "contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
@@ -19,8 +19,12 @@ ActiveRecord::Schema.define(version: 20191126191753) do
     t.string   "phone"
     t.string   "address"
     t.integer  "group_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.bigint   "avatar_file_size"
+    t.datetime "avatar_updated_at"
     t.index ["group_id"], name: "index_contacts_on_group_id", using: :btree
   end
 
