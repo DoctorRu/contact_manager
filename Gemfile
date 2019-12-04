@@ -64,5 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7' # Layout
 gem 'jasny-bootstrap-rails', '~> 3.1', '>= 3.1.3' # Extends Bootstrap with some additional features
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1' # Jquery plugins
 gem 'kaminari', '~> 1.1', '>= 1.1.1' # Pagination
 gem 'paperclip', '~> 6.1' # File upload

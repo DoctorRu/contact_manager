@@ -47,6 +47,12 @@ class ContactsController < ApplicationController
     redirect_to contacts_path
   end
 
+  def autocomplete
+    @contacts = Contact
+    .search(params[:term])
+    .order(created_at: :desc)
+    .page(params[:page])
+  end
 
   private
 

@@ -23,3 +23,6 @@ Simple contact manager with bootstrap
 - Pagination
 
   config/initializers/kaminari_config
+
+- Json
+  https://github.com/rails/jbuilder
