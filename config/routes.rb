@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       get 'autocomplete', on: :collection
   end
 
+  post '/groups', to: 'groups#create'
   
   root 'contacts#index'
 end
