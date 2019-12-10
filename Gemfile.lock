@@ -137,6 +137,8 @@ GEM
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
     puma (3.12.1)
+    pundit (2.1.0)
+      activesupport (>= 3.0.0)
     rack (2.0.7)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -240,6 +242,7 @@ DEPENDENCIES
   mysql2 (>= 0.3.18, < 0.5)
   paperclip (~> 6.1)
   puma (~> 3.0)
+  pundit (~> 2.1)
   rails (~> 5.0.4)
   sass-rails (~> 5.0)
   spring

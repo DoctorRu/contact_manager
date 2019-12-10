@@ -68,3 +68,4 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1' # Jquery plugins
 gem 'kaminari', '~> 1.1', '>= 1.1.1' # Pagination
 gem 'paperclip', '~> 6.1' # File upload
 gem 'devise', '~> 4.7', '>= 4.7.1' # account mananger
+gem 'pundit', '~> 2.1' # Authoriization
