@@ -1,5 +1,3 @@
-require 'faker'
-
 Contact.destroy_all
 Group.destroy_all
 User.destroy_all

@@ -38,7 +38,6 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'faker', '~> 1.7', '>= 1.7.3'
 end
 
 group :production do
@@ -78,4 +77,5 @@ gem 'paperclip', '~> 6.1' # File upload
 gem 'devise', '~> 4.7', '>= 4.7.1' # account mananger
 gem 'pundit', '~> 2.1' # Authoriization
 gem 'toastr-rails', '~> 1.0', '>= 1.0.3' # View javascript notifications
+gem 'faker', '~> 1.7', '>= 1.7.3'
 
