@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.5.7'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -8,8 +9,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.4'
-# Use mysql as the database for Active Record
-gem 'mysql2', '>= 0.3.18', '< 0.5'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -41,7 +41,15 @@ group :development, :test do
   gem 'faker', '~> 1.7', '>= 1.7.3'
 end
 
+group :production do
+  gem 'pg', '~> 1.1', '>= 1.1.4'
+end
+
 group :development do
+  # Use mysql as the database for Active Record
+  # gem 'mysql2', '>= 0.3.18', '< 0.5'
+  gem 'pg', '~> 1.1', '>= 1.1.4'
+
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
