@@ -62,7 +62,7 @@ group :development do
   
   # Other
   gem 'annotate' # Add a comment summarizing the current schema to the top or bottom of each of your model
-  gem 'better_errors', '~> 2.5', '>= 2.5.1' # Better rails error display
+  gem 'better_errors', '~> 2.8' # Better rails error display
   gem 'binding_of_caller', '~> 0.8.0' # Retrieve the binding of a method's caller.
 end
 
